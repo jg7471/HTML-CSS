@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--    div .orange   div 안의 후손이면 다 적용/// 공백 주의-->
+  <style>
+    div .orange {
+      color:orange;
+
+    }
+  </style>
+
+</head>
+<body>
+  
+  <h1> 할로 </h1>
+
+  <div>
+    <ul>
+      <li>사과</li>
+      <li class="orange">오렌지</li>
+      <li>딸기</li>
+    </ul>
+  </div>
+  <div>당근</div>  <!-- 당근은 그냥 div 요소일 뿐임-->
+  <p>토마토</p>
+  <span>오렌지</span>
+
+
+</body>
+</html>

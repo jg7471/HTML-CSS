@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 내부 스타일-->
+  <!-- li.orange -->
+
+  <style>
+    ul>.orange {
+      color: orange;
+
+
+
+    }
+
+    div>ul>li {
+      font-weight: bold;
+
+    }
+
+
+
+  </style>
+  <!-- div->ul->li-> 좌->우 순서대로만 적용 -->
+
+
+</head>
+
+<body>
+  <h1> 할로 </h1>
+
+  <div>
+    <ul>
+      <li>사과</li>
+      <ol>
+        <li>1</li> <!-- li*3{$번째}  code assitant 사라지면 ctrl+space -->
+        <li>2</li> <!-- ul의 직속자식만 허용-->
+        <li>3</li>
+      </ol>
+      <li class="orange">오렌지</li> <!-- ul의 직속자식-->
+      <li>딸기</li>
+      <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ol>
+
+    </ul>
+  </div>
+  <div>당근</div> <!-- 당근은 그냥 div 요소일 뿐임-->
+  <p>토마토</p>
+  <span class="orange">오렌지</span>
+
+
+
+</body>
+
+</html>
