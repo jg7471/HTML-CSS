@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #i-yellow {
+      color: yellow;
+    }
+
+
+    .c-green {
+      color: green;
+    }
+
+    div {
+      color: red !important;  /* !important 최우선 */
+      width: 200px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="i-yellow" class="c-green" style="color:orange;">hello</div>
+<!-- 명시도 점수 순위에 따라 차등적용///부모가 100점이라도 자식에게 100점이 물려 받지 않음
+.wrap>.fruit>.orange   ->30점
+,orange   ->10점
+--같은 것이라도 점수 때문에 디테일하게 적음
+→점수 안되면 최후의 수단 : 인라인 1000점(최소한 사용)
+→!important 무한점 >> important vs important 마지막이 우선 -> 막장 코드
+
+
+-->
+</body>
+
+</html>

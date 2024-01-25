@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    span {
+      display: block; /* 블록요소 세로로 배치*/
+      /* display를 활용하여 span이 블록 요소가 된다 width+height 같을 수 있게됨*/
+      width: 100px;
+      height: 100px;
+      background-color: red;
+
+    }
+    a{
+      width: 100px;
+      height: 100px;
+      background-color: greenyellow;
+      display: inline-block; /* 블록요소 가로로 배치*/
+      
+    }
+
+    .box {
+      height: 100px;
+      background-color: wheat;
+      margin-top: 40px;
+
+    }
+    
+    .box > input:nth-child(2){ /*2번째 input tag 삭제*/
+      display: none;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <span>display 속성 공부!</span>
+  <a href="#">게시판</a>
+  <a href="#">방명록</a>
+
+<div class="box">
+  <input type="text" value="1">
+  <input type="text" value="2">
+  <input type="text" value="3">
+  <input type="text" value="4">
+  <input type="text" value="5">
+  <input type="text" value="6">
+</div>
+
+
+
+</body>
+
+</html>
