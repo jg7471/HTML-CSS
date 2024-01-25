@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .box {
+      /* display: inline-block; 세로를 가로로 변경→미세한 틈 조정 어렵다*/
+      width: 150px;
+      height: 100px;
+      background-color: red;
+      font-size: 30px;
+      color: wheat;
+      margin: 10px;
+      float: left;
+      /*가로로 만들 수 있음 but 떠 있는 상태 이미지 겹칠 수도 있음*/
+    }
+
+    .new-box {
+      width: 200px;
+      height: 150px;
+      background-color: yellowgreen;
+      clear: both /* 작업 마무리 후에 clear 해줘야 다음 작업시 수월 */
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="new-box">4</div>
+
+
+</body>
+
+</html>

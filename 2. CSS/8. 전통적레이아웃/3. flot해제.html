@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 700px;
+      padding: 20px;
+      border: 3px solid red;
+      /* overflow: hidden; */
+      /* 권장x 진짜 필요할 때 못씀 -> 클리어로용(야매)로 쓰지마라 */
+
+    }
+
+    .box {
+      width: 200px;
+      height: 150px;
+      border: 3px solid green;
+      background-color: yellowgreen;
+      font-size: 50px;
+      float: left;
+    }
+
+    /*
+    .clear-box {
+      clear: both;
+      둘 다 인식되긴 하나 , 이것을 위해 추가하는 것 비추 쓰지마셈 1
+    }
+*/
+
+
+    .clearfix::after {
+      /* 공식처럼 적용, 부모요소에 가상클래스를 적용, 가장 정석적*/
+      content: '';
+      display: block;
+      clear: both;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- .contaier>.box*2{$} -->
+  <div class="container clearfix">
+    <!-- clearfix 관례적으로 씀-->
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <!-- <div class="clear-box"></div>  쓰지마셈 1-->
+  </div>
+
+
+</body>
+
+</html>
