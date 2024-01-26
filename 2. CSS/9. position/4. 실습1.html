@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <style>
+    article {
+      width: 300px;
+      height: 150px;
+      background-color: pink;
+
+    }
+
+    article h1 {
+      color: greenyellow;
+      font-weight: bold;
+      padding: 10px;
+
+    }
+
+    article ul {}
+
+    article ul li a {
+      text-decoration-line: none;
+      padding-left: 20px;
+    }
+
+
+
+    article .content li a:hover {
+      color: #00f;
+      text-decoration: underline;
+    }
+
+    
+
+    .absolute {
+      position: absolute;
+      top: 1px;
+      left: 240px;
+
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <article>
+    <h1>동물병원 24시</h1>
+    <ul class="content">
+      <!-- 목록 -->
+      <li><a href="#">밥 먹이는 시간 지킬 것</a></li>
+      <li><a href="#">길고양이 주사 맞히기</a></li>
+      <li><a href="#">눈 아픈 동물 목에 깔대기 씌우기</a></li>
+      <li><a href="#">매일 목욕 시킬 것</a></li>
+      <li><a href="#">이름 없는 애들 이름 짓기 말기</a></li>
+    </ul>
+    <div class="more absolute">
+      <a href="#">더보기</a>
+    </div>
+  </article>
+
+</body>
+
+</html>

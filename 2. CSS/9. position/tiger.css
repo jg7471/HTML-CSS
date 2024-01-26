@@ -1,0 +1,67 @@
+@import url(../../../common.css);
+
+
+
+/*마진 좌우만 오토
+좌우 ul 메뉴 clearfix*/
+
+
+
+
+body #wrapper header {
+  background-color: navy;
+  color: yellow;
+  font-size: 1.5em;
+  width: 1000px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+
+}
+
+body div header h1 strong {
+  color: white;
+  font-size: 5em;
+}
+
+
+body div header h1 span {
+  color: yellow;
+  font-size: 3em;
+}
+
+body div header h1 em {
+  color: silver;
+  font-size: 2em;
+}
+
+body div header h1 {
+  color: yellow;
+
+}
+
+.container {
+  float: left;
+  background-color: azure;
+  width: 200px;
+  height: 700px;
+  padding: 5px;
+}
+
+
+
+.menu {
+  margin: 10 10;
+
+}
+
+
+body #wrapper .container .content h2 {
+  width: 800px;
+  height: 100px;
+  color: yellow;
+  background-color: darkred;
+
+  font-family: 궁서체;
+
+}

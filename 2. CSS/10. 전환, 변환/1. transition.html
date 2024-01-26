@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .box {
+      width: 700px;
+      height: 100px;
+      margin: 50px;
+      background-color: red;
+
+      /*transition-property: all;
+      transition-duration: 2s;
+      transition-delay: 2s;시간지연
+      transition-timing-function: cubic-bezier(cubic-bezier(.38,1.58,0,-1.2)); /*지속성* easeInOutExpo, cubic-bezier /
+      */
+      /* transition : 속성 지속시간 딜레이 타이밍함수 */
+      /* transition : 0.4 linear; */
+      transition: all 1ss2s cubic-bezier(.06,.96,.97,.14);
+    }
+
+    .box:hover {
+      width: 1px;
+      background-color: yellowgreen;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="box"></div>
+
+</body>
+
+</html>
